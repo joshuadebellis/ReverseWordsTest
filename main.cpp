@@ -46,11 +46,15 @@ int main()
     
     
   
+    std::ofstream myfile;
+    myfile.open ("uniquepairs.txt");
     
+
     
     for (std::string n : IntersectionVector)
-        std::cout << n << std::endl;
-
+        myfile<< n << std::endl;
+    
+    myfile.close();
     return 0;
 
 }
